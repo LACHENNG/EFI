@@ -50,3 +50,11 @@ Load AMFIPass Kext:
 Place the kext in your EFI partition under EFI/OC/Kexts/.
 Add it to your config.plist under the Kernel -> Add section.
 Save and reboot.
+
+3. 设置好virtual box后，有个额外的好处，现在可以使用如下命令使用minikube+virtual box实现和docker desktop类似的效果，直接在终端使用docker 命令，是目前比较好的透明的，和原来体验差不多的方式。[参考](https://www.whidy.net/amd-hackintosh-incompatible-docker-desktop-and-solution)
+```shell
+brew install virtualbox
+brew install minikube docker
+minikube start --driver=virtualbox --keep-context
+eval $(minikube docker-env)
+```
