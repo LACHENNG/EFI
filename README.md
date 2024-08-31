@@ -22,10 +22,19 @@ https://www.youtube.com/watch?v=CdLvTaBCYyA
 - **125% 缩放**:  
   - 目标分辨率：2048x1120
   
-- **150% 缩放**:  
+- **150% 缩放**:  d fzx xz    
   - 目标分辨率：1707x933
   
 - **200% 缩放**:  
   - 目标分辨率：1280x700
 
 这些目标分辨率是你在使用 `hidpi.sh` 脚本时可以输入的合法分辨率，以达到相应的缩放效果。
+
+
+# 参考
+1. https://qqquq.com/article/amd-laptop-hackintosh/
+2. docker可能解决方案：virual box + linux [参考](https://macos86.it/topic/6535-guidevirtualbox-on-sonoma-and-amd-hackintosh/)
+
+> 你需要：
+禁用SIP，并加载AMFIPass kexts，以便virtual box能正常在AMD hackintosh中启动。
+Virtual box 需要6.1.50（7.x不支持）
