@@ -35,6 +35,18 @@ https://www.youtube.com/watch?v=CdLvTaBCYyA
 1. https://qqquq.com/article/amd-laptop-hackintosh/
 2. docker可能解决方案：virual box + linux [参考](https://macos86.it/topic/6535-guidevirtualbox-on-sonoma-and-amd-hackintosh/)
 
-> 你需要：
-禁用SIP，并加载AMFIPass kexts，以便virtual box能正常在AMD hackintosh中启动。
+> 对于使用virtual box你需要：
+禁用MacOs的SIP，并加载AMFIPass kexts，以便virtual box能正常在AMD hackintosh中启动。
 Virtual box 需要6.1.50（7.x不支持）
+
+> Disable SIP:
+Boot into Recovery Mode (press and hold Cmd + R during startup).
+Open Terminal from the Utilities menu.
+Run: csrutil disable.
+Reboot.
+Load AMFIPass Kext:
+
+> Download the AMFIPass kext.
+Place the kext in your EFI partition under EFI/OC/Kexts/.
+Add it to your config.plist under the Kernel -> Add section.
+Save and reboot.
