@@ -1,0 +1,4 @@
+*.zip
+EFI-backup-*/
+EFI-repo/
+.DS_Store
